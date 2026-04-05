@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  livre-service:
+    build: .
+    container_name: livre-service
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_APPLICATION_NAME=livre-service
+    networks:
+      - bibliotheque-network
+
+networks:
+  bibliotheque-network:
+    driver: bridge
