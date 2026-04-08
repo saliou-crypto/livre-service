@@ -34,4 +34,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/livre-service:latest
+          tags: saliou-crypto/livre-service:latest
